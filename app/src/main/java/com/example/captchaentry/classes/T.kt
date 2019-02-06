@@ -23,7 +23,7 @@ class T {
         //log
         fun e(message : String)
         {
-            Log.e("CAPTCHA",message)
+            Log.e("CAPTCHA_LOG",message)
         }
         //snack bar
         fun s(view : View, message : String)
