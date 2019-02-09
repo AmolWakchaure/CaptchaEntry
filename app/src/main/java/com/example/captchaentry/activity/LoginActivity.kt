@@ -4,6 +4,7 @@ import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.design.widget.Snackbar
+import android.view.WindowManager
 import com.android.volley.TimeoutError
 import com.android.volley.VolleyError
 import com.example.captchaentry.R
@@ -19,7 +20,10 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
+        window.setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN)
 
+
+        toolbarTitle.setText("Please, login here")
         //set click listner
         setClickListner()
     }
@@ -37,6 +41,7 @@ class LoginActivity : AppCompatActivity() {
         //forgotPass_txt
         forgotPass_txt.setOnClickListener {
 
+            startActivity(Intent(this,ForgotPasswordActivity::class.java))
         }
     }
 

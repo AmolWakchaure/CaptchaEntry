@@ -4,6 +4,10 @@ interface Constants {
 
     companion object {
 
+        var SPLASH_DELAY : Long = 2000
+
+        var USER_NAME : String = "pref_key"
+
         //shared preferences
         var PREF_KEY : String = "pref_key"
         var CONNECTION : String = "Oops ! please check your internet connection."
