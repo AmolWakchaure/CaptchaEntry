@@ -3,18 +3,30 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="fill_parent"
-        android:gravity="center_horizontal|bottom"
+        android:gravity="center"
         android:layout_height="fill_parent"
+        android:orientation="vertical"
         tools:context=".activity.SplashActivity">
 
 
 
     <TextView
-            android:text="v1.0"
+            android:text="Captcha"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/crc55"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-            android:layout_marginBottom="15pt"
-            android:id="@+id/textView"/>
+            android:textSize="22pt"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"/>
+    <TextView
+            android:text="Entry v1.0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/crc55"
+            android:textSize="15pt"
+            android:gravity="center"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"/>
+
+
 </LinearLayout>
